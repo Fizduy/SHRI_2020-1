@@ -1,0 +1,14 @@
+{
+  "name": "shri_2020_1",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Igor Korneev",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
