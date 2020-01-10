@@ -1,0 +1,113 @@
+.theme {
+    //TODO: все блоки должны перестроиться один под другим!
+    $bkpt: 1024px;
+
+    box-sizing: border-box;
+    
+    &_color {
+
+        &_project-default {
+
+            $bg-default: #FFFFFF;
+            $bg-accent: #ffcc00;
+            $bg-border: #000000;
+
+            $text-primary: #000000;
+            $text-secondary: rgba(0, 0, 0, 0.6);
+            $text-additional: rgba(0, 0, 0, 0.3);
+            $text-link: #0077ff;
+
+        }
+
+        &_project-brand {
+
+            $bg-default: #0077ff;
+            $bg-accent: #FFFFFF;
+            $bg-border: #FFFFFF;
+
+            $text-primary: #FFFFFF;
+            $text-secondary: rgba(255, 255, 255, 0.6);
+            $text-additional: rgba(255, 255, 255, 0.3);
+            $text-link: #FFFFFF;
+
+        }
+
+        &_project-inverse {
+
+            $bg-default: #000000;
+            $bg-accent: #FFFFFF;
+            $bg-border: #FFFFFF;
+
+            $text-primary: #FFFFFF;
+            $text-secondary: rgba(255, 255, 255, 0.6);
+            $text-additional: rgba(255, 255, 255, 0.3);
+            $text-link: #0077ff;
+
+        }
+
+        &_project-warning {
+
+            $bg-default: #ff3333;
+            $bg-accent: #FFFFFF;
+            $bg-border: #ff3333;
+
+            $text-primary: #FFFFFF;
+            $text-secondary: rgba(255, 255, 255, 0.6);
+            $text-additional: rgba(255, 255, 255, 0.3);
+            $text-link: #FFF;
+
+        }
+    }
+
+    &_size {
+
+        &_default {
+
+            $text-s: 8px;
+            $text-m: 10px;
+            $text-l: 11px;
+            $text-xl: 13px;
+            $text-xxl: 16px;
+
+            $line-height-s: 21px;
+            $line-height-m: 25px;
+            $line-height-l: 28px;
+            $line-height-xl: 34px;
+            $line-height-xxl: 38px;
+
+        }
+    }
+
+    &_space {
+
+        &_default {
+
+            $space-xxxs: 3px;
+            $space-xxs: 6px;
+            $space-xs: 9px;
+            $space-s: 15px;
+            $space-m: 18px;
+            $space-l: 24px;
+            $space-xl: 27px;
+            $space-xxl: 36px;
+            $space-xxxl: 45px;
+            $space-xxxxl: 51px;
+            $space-xxxxxl: 72px;
+
+        }
+    }
+
+    // $space не будут доступны без вызова класса theme_space_default !!!
+    &_gap {
+
+        &_small {
+            
+            $gap: $space-s;
+
+            @media (min-width: $bkpt) {
+                $gap: $space-xl;
+              }
+
+        }
+    }
+}

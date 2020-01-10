@@ -1,0 +1,45 @@
+.layout {
+
+    &__container {
+
+        &_align {
+
+            &_center {
+                // выравнивание блока по горизонтали
+            }
+        }
+
+        &_size {
+
+            &_s {
+                max-width: 920px;
+            }
+
+            &_m {
+                max-width: 1280px;
+            }
+        }
+
+        &_space-v {
+
+            &_xxxxl {
+                padding-top: $space-xxxxl;
+            }
+
+            &_xxxxxl {
+                padding-top: $space-xxxxxl;
+            }
+        }
+
+        &_indent-b {
+
+            &_xxl {
+                padding-top: $space-xxl;
+            }
+
+            &_xxxxl {
+                padding-top: $space-xxxxl;
+            }
+        }
+    }
+}
