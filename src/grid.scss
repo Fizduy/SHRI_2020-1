@@ -1,0 +1,96 @@
+.grid {
+
+    display: grid;
+
+    &__fraction {
+
+        &_m-col {
+            
+            &_2 {
+
+                @media (min-width: $bkpt) {
+                    grid-column: span 2
+                }
+
+            }
+
+            &_3 {
+
+                @media (min-width: $bkpt) {
+                    grid-column: span 3
+                }
+
+            }
+
+            &_4 {
+
+                @media (min-width: $bkpt) {
+                    grid-column: span 4
+                }
+
+            }
+
+            &_5 {
+
+                @media (min-width: $bkpt) {
+                    grid-column: span 5
+                }
+
+            }
+
+            &_8 {
+
+                @media (min-width: $bkpt) {
+                    grid-column: span 8
+                }
+
+            }
+        }
+    }
+    
+    &_m-columns {
+
+        &_10 {
+
+            @media (min-width: $bkpt) {
+            grid-template-columns: repeat(10, 1fr);
+            }
+
+        }
+
+        &_12 {
+
+            @media (min-width: $bkpt) {
+            grid-template-columns: repeat(12, 1fr);
+            }
+
+        }
+    }
+
+    &_col-gap {
+
+        &_full {
+            column-gap: $gap;
+        }
+
+        &_half {
+            column-gap: $gap / 2;
+        }
+
+        &_two-thirds {
+            column-gap: $gap * 2 / 3;
+        }
+
+    }
+
+    &_row-gap {
+
+        &_full {
+            row-gap: $gap;
+        }
+
+        &_half {
+            row-gap: $gap / 2;
+        }
+    }
+}
