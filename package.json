@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "start",
-    "sass": "node-sass --output-style compressed --watch style.scss ../stub/build/style.css"
+    "sass": "node-sass --output-style compressed --watch src/style.scss ../stub/build/style.css"
   },
   "author": "Igor Korneev",
   "license": "ISC",
