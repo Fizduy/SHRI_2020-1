@@ -4,11 +4,15 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "sass": "node-sass style.scss main.css --output-style compressed"
   },
   "author": "Igor Korneev",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0"
   }
 }

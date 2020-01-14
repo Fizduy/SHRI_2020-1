@@ -22,24 +22,26 @@
 
         &_space-v {
 
-            &_xxxxl {
-                padding-top: $space-xxxxl;
+            @each $space-v in xxxxl, xxxxxl {
+
+                &_#{$space-v} {
+                    padding-top: map-get($space, $space-v);
+                }
+
             }
 
-            &_xxxxxl {
-                padding-top: $space-xxxxxl;
-            }
         }
 
         &_indent-b {
 
-            &_xxl {
-                padding-top: $space-xxl;
+            @each $indent-b in xxl, xxxxl {
+
+                &_#{$indent-b} {
+                    margin-bottom: map-get($space, $indent-b);
+                }
+
             }
 
-            &_xxxxl {
-                padding-top: $space-xxxxl;
-            }
         }
     }
 }

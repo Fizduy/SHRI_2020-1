@@ -1,9 +1,47 @@
 .theme {
     //TODO: все блоки должны перестроиться один под другим!
     $bkpt: 1024px;
+    
+    $theme_color: (
+        'project-default': (
+            'bg-default': #FFFFFF,
+            'bg-accent': #ffcc00,
+            'bg-border': #000000,
+            'text-primary': #292020,
+            'text-secondary': rgba(0, 0, 0, 0.6),
+            'text-additional': rgba(0, 0, 0, 0.3),
+            'text-link': #0077ff
+        ),
+        'project-brand' (
+            'bg-default': #0077ff,
+            'bg-accent': #FFFFFF,
+            'bg-border': #FFFFFF,
+            'text-primary': #FFFFFF,
+            'text-secondary': rgba(255, 255, 255, 0.6),
+            'text-additional': rgba(255, 255, 255, 0.3),
+            'text-link': #FFFFFF
+        )
+
+    ) !global;
+
+    $space: (
+        'space_default': (
+            'xxxs': 3px,
+            'xxs': 6px,
+            'xs': 9px,
+            's': 15px,
+            'm': 18px,
+            'l': 24px,
+            'xl': 27px,
+            'xxl': 36px,
+            'xxxl': 45px,
+            'xxxxl': 51px,
+            'xxxxxl': 72px
+        )
+    ) !global;
 
     box-sizing: border-box;
-    
+
     &_color {
 
         &_project-default {
@@ -12,7 +50,7 @@
             $bg-accent: #ffcc00;
             $bg-border: #000000;
 
-            $text-primary: #000000;
+            $text-primary: #292020;
             $text-secondary: rgba(0, 0, 0, 0.6);
             $text-additional: rgba(0, 0, 0, 0.3);
             $text-link: #0077ff;
@@ -82,17 +120,19 @@
 
         &_default {
 
-            $space-xxxs: 3px;
-            $space-xxs: 6px;
-            $space-xs: 9px;
-            $space-s: 15px;
-            $space-m: 18px;
-            $space-l: 24px;
-            $space-xl: 27px;
-            $space-xxl: 36px;
-            $space-xxxl: 45px;
-            $space-xxxxl: 51px;
-            $space-xxxxxl: 72px;
+            $space: (
+                xxxs: 3px,
+                xxs: 6px,
+                xs: 9px,
+                s: 15px,
+                m: 18px,
+                l: 24px,
+                xl: 27px,
+                xxl: 36px,
+                xxxl: 45px,
+                xxxxl: 51px,
+                xxxxxl: 72px
+            );
 
         }
     }
@@ -101,11 +141,10 @@
     &_gap {
 
         &_small {
-            
-            $gap: $space-s;
+            $gap: map-get($space, s);
 
             @media (min-width: $bkpt) {
-                $gap: $space-xl;
+                $gap: map-get($space, xl);
               }
 
         }

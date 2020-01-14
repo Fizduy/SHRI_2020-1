@@ -1,0 +1,53 @@
+.card {
+
+    &__content {
+
+        &_distribute {
+
+            &_center{
+
+            }
+
+        }
+
+        &_vertical-align {
+
+            &_center{
+
+            }
+
+        }
+
+        &_space-a{
+
+            @each $space-a in m, xl, l, xxl, xxxl {
+                
+                &_#{$space-a} {
+                    padding: map-get($space, $space-a);
+                }
+                
+              }
+
+        }
+
+    }
+
+    &__footer {
+
+    }
+
+    &_border {
+        
+        &_all {
+            border-style: solid;
+            border-color: $bg-border;
+        }
+    }
+
+    &_view {
+
+        &_default {
+            background-color: $bg-default;
+        }
+    }
+}
