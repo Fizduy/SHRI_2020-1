@@ -1,6 +1,6 @@
 .theme {
     //TODO: все блоки должны перестроиться один под другим!
-    --bkpt: 1024px;
+    $bkpt: 1024px !global;
 
     box-sizing: border-box;
 
@@ -102,7 +102,7 @@
         &_small {
             --gap: var(--space_s);
 
-            @media (min-width: var(--bkpt)) {
+            @media (min-width: $bkpt) {
                 --gap: var(--space_xl);
               }
 

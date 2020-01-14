@@ -9,7 +9,7 @@
             @each $width in 2, 3, 4, 5, 8 {
 
                 &_#{$width} {
-                    @media (min-width: var(--bkpt)) {
+                    @media (min-width: $bkpt) {
                         grid-column: span $width;
                     }
                 }
@@ -24,7 +24,7 @@
         @each $count in 10, 12 {
 
             &_#{$count} {
-                @media (min-width: var(--bkpt)) {
+                @media (min-width: $bkpt) {
                     grid-template-columns: repeat($count, 1fr);
                 }
             }
