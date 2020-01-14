@@ -25,7 +25,7 @@
             @each $space-v in xxxxl, xxxxxl {
 
                 &_#{$space-v} {
-                    padding-top: map-get($space, $space-v);
+                    padding-top: var(--space_#{$space-v});
                 }
 
             }
@@ -37,7 +37,7 @@
             @each $indent-b in xxl, xxxxl {
 
                 &_#{$indent-b} {
-                    margin-bottom: map-get($space, $indent-b);
+                    margin-bottom: var(--space_#{$indent-b});
                 }
 
             }

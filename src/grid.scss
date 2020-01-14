@@ -9,7 +9,7 @@
             @each $width in 2, 3, 4, 5, 8 {
 
                 &_#{$width} {
-                    @media (min-width: $bkpt) {
+                    @media (min-width: var(--bkpt)) {
                         grid-column: span $width;
                     }
                 }
@@ -24,7 +24,7 @@
         @each $count in 10, 12 {
 
             &_#{$count} {
-                @media (min-width: $bkpt) {
+                @media (min-width: var(--bkpt)) {
                     grid-template-columns: repeat($count, 1fr);
                 }
             }
@@ -36,15 +36,15 @@
     &_col-gap {
 
         &_full {
-            column-gap: $gap;
+            column-gap: var(--gap);
         }
 
         &_half {
-            column-gap: $gap / 2;
+            column-gap: calc(var(--gap) / 2);
         }
 
         &_two-thirds {
-            column-gap: $gap * 2 / 3;
+            column-gap: calc(var(--gap) * 2 / 3);
         }
 
     }
@@ -52,11 +52,11 @@
     &_row-gap {
 
         &_full {
-            row-gap: $gap;
+            row-gap: var(--gap);
         }
 
         &_half {
-            row-gap: $gap / 2;
+            row-gap: calc(var(--gap) / 2);
         }
     }
 }

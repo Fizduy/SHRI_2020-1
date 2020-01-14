@@ -20,13 +20,13 @@
 
         &_space-a{
 
-            @each $space-a in m, xl, l, xxl, xxxl {
+            @each $space-a in m, l, xl, xxl, xxxl {
                 
                 &_#{$space-a} {
-                    padding: map-get($space, $space-a);
+                    padding: var(--space_#{$space-a});
                 }
                 
-              }
+            }
 
         }
 
@@ -34,20 +34,64 @@
 
     &__footer {
 
+        &_distribute {
+
+            &_between{
+
+            }
+
+            &_center{
+
+            }
+
+            &_right{
+
+            }
+
+        }
+
+        &_vertical-align {
+
+            &_center{
+
+            }
+
+            &_top{
+
+            }
+
+            &_bottom{
+
+            }
+
+        }
+
+        &_space-a{
+
+            @each $space-a in m, l, xl, xxl {
+                
+                &_#{$space-a} {
+                    padding: var(--space_#{$space-a});
+                }
+                
+            }
+
+        }
+
     }
 
     &_border {
         
         &_all {
             border-style: solid;
-            border-color: $bg-border;
+            border-color: var(--bg-border);
         }
     }
 
     &_view {
 
         &_default {
-            background-color: $bg-default;
+            background-color: var(--bg-defaul);
         }
     }
 }

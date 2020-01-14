@@ -1,44 +1,6 @@
 .theme {
     //TODO: все блоки должны перестроиться один под другим!
-    $bkpt: 1024px;
-    
-    $theme_color: (
-        'project-default': (
-            'bg-default': #FFFFFF,
-            'bg-accent': #ffcc00,
-            'bg-border': #000000,
-            'text-primary': #292020,
-            'text-secondary': rgba(0, 0, 0, 0.6),
-            'text-additional': rgba(0, 0, 0, 0.3),
-            'text-link': #0077ff
-        ),
-        'project-brand' (
-            'bg-default': #0077ff,
-            'bg-accent': #FFFFFF,
-            'bg-border': #FFFFFF,
-            'text-primary': #FFFFFF,
-            'text-secondary': rgba(255, 255, 255, 0.6),
-            'text-additional': rgba(255, 255, 255, 0.3),
-            'text-link': #FFFFFF
-        )
-
-    ) !global;
-
-    $space: (
-        'space_default': (
-            'xxxs': 3px,
-            'xxs': 6px,
-            'xs': 9px,
-            's': 15px,
-            'm': 18px,
-            'l': 24px,
-            'xl': 27px,
-            'xxl': 36px,
-            'xxxl': 45px,
-            'xxxxl': 51px,
-            'xxxxxl': 72px
-        )
-    ) !global;
+    --bkpt: 1024px;
 
     box-sizing: border-box;
 
@@ -46,53 +8,53 @@
 
         &_project-default {
 
-            $bg-default: #FFFFFF;
-            $bg-accent: #ffcc00;
-            $bg-border: #000000;
+            --bg-default: #FFFFFF;
+            --bg-accent: #ffcc00;
+            --bg-border: #000000;
 
-            $text-primary: #292020;
-            $text-secondary: rgba(0, 0, 0, 0.6);
-            $text-additional: rgba(0, 0, 0, 0.3);
-            $text-link: #0077ff;
+            --text-primary: #292020;
+            --text-secondary: rgba(0, 0, 0, 0.6);
+            --text-additional: rgba(0, 0, 0, 0.3);
+            --text-link: #0077ff;
 
         }
 
         &_project-brand {
 
-            $bg-default: #0077ff;
-            $bg-accent: #FFFFFF;
-            $bg-border: #FFFFFF;
+            --bg-default: #0077ff;
+            --bg-accent: #FFFFFF;
+            --bg-border: #FFFFFF;
 
-            $text-primary: #FFFFFF;
-            $text-secondary: rgba(255, 255, 255, 0.6);
-            $text-additional: rgba(255, 255, 255, 0.3);
-            $text-link: #FFFFFF;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --text-additional: rgba(255, 255, 255, 0.3);
+            --text-link: #FFFFFF;
 
         }
 
         &_project-inverse {
 
-            $bg-default: #000000;
-            $bg-accent: #FFFFFF;
-            $bg-border: #FFFFFF;
+            --bg-default: #000000;
+            --bg-accent: #FFFFFF;
+            --bg-border: #FFFFFF;
 
-            $text-primary: #FFFFFF;
-            $text-secondary: rgba(255, 255, 255, 0.6);
-            $text-additional: rgba(255, 255, 255, 0.3);
-            $text-link: #0077ff;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --text-additional: rgba(255, 255, 255, 0.3);
+            --text-link: #0077ff;
 
         }
 
         &_project-warning {
 
-            $bg-default: #ff3333;
-            $bg-accent: #FFFFFF;
-            $bg-border: #ff3333;
+            --bg-default: #ff3333;
+            --bg-accent: #FFFFFF;
+            --bg-border: #ff3333;
 
-            $text-primary: #FFFFFF;
-            $text-secondary: rgba(255, 255, 255, 0.6);
-            $text-additional: rgba(255, 255, 255, 0.3);
-            $text-link: #FFF;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --text-additional: rgba(255, 255, 255, 0.3);
+            --text-link: #FFF;
 
         }
     }
@@ -101,17 +63,17 @@
 
         &_default {
 
-            $text-s: 8px;
-            $text-m: 10px;
-            $text-l: 11px;
-            $text-xl: 13px;
-            $text-xxl: 16px;
+            --text-s: 8px;
+            --text-m: 10px;
+            --text-l: 11px;
+            --text-xl: 13px;
+            --text-xxl: 16px;
 
-            $line-height-s: 21px;
-            $line-height-m: 25px;
-            $line-height-l: 28px;
-            $line-height-xl: 34px;
-            $line-height-xxl: 38px;
+            --line-height-s: 21px;
+            --line-height-m: 25px;
+            --line-height-l: 28px;
+            --line-height-xl: 34px;
+            --line-height-xxl: 38px;
 
         }
     }
@@ -120,31 +82,28 @@
 
         &_default {
 
-            $space: (
-                xxxs: 3px,
-                xxs: 6px,
-                xs: 9px,
-                s: 15px,
-                m: 18px,
-                l: 24px,
-                xl: 27px,
-                xxl: 36px,
-                xxxl: 45px,
-                xxxxl: 51px,
-                xxxxxl: 72px
-            );
+                --space_xxxs: 3px;
+                --space_xxs: 6px;
+                --space_xs: 9px;
+                --space_s: 15px;
+                --space_m: 18px;
+                --space_l: 24px;
+                --space_xl: 27px;
+                --space_xxl: 36px;
+                --space_xxxl: 45px;
+                --space_xxxxl: 51px;
+                --space_xxxxxl: 72px;
 
         }
     }
 
-    // $space не будут доступны без вызова класса theme_space_default !!!
     &_gap {
 
         &_small {
-            $gap: map-get($space, s);
+            --gap: var(--space_s);
 
-            @media (min-width: $bkpt) {
-                $gap: map-get($space, xl);
+            @media (min-width: var(--bkpt)) {
+                --gap: var(--space_xl);
               }
 
         }
