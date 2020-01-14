@@ -5,7 +5,7 @@
         &_distribute {
 
             &_center{
-
+                justify-self: center;
             }
 
         }
@@ -13,7 +13,7 @@
         &_vertical-align {
 
             &_center{
-
+                align-self: center;
             }
 
         }
@@ -37,15 +37,15 @@
         &_distribute {
 
             &_between{
-
+                justify-self: unset;
             }
 
             &_center{
-
+                justify-self: center;
             }
 
             &_right{
-
+                justify-self: right;
             }
 
         }
@@ -53,15 +53,15 @@
         &_vertical-align {
 
             &_center{
-
+                align-self: center;
             }
 
             &_top{
-
+                align-self: start;
             }
 
             &_bottom{
-
+                align-self: end;
             }
 
         }
@@ -91,7 +91,7 @@
     &_view {
 
         &_default {
-            background-color: var(--bg-defaul);
+            background-color: var(--bg-default);
         }
     }
 }

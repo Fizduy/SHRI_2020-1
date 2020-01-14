@@ -1,11 +1,13 @@
 .layout {
 
+    width: 100%;
+
     &__container {
 
         &_align {
 
             &_center {
-                // выравнивание блока по горизонтали
+                margin: auto;
             }
         }
 
@@ -26,6 +28,7 @@
 
                 &_#{$space-v} {
                     padding-top: var(--space_#{$space-v});
+                    padding-bottom: var(--space_#{$space-v});
                 }
 
             }
