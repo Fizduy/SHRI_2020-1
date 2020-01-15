@@ -1,0 +1,33 @@
+.button {
+
+    background-color: var(--bg-accent);
+    width: 200px;
+
+    &_size {
+
+        $sizes : (
+            s: 24px,
+            m : 32px,
+            l : 42px,
+            xl : 56px,
+            xxl : 64px
+        );
+
+        @each $size, $val in $sizes {
+
+            &_#{$size} {
+                height: $val;
+            }
+
+        }
+
+    }
+
+    &_width {
+
+        &_full {
+            width: 100%;
+        }
+
+    }
+}

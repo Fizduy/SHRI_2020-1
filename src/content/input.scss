@@ -1,0 +1,25 @@
+.input {
+    border: 3px solid var(--bg-border);
+    width: auto;
+
+    &_size {
+
+        $sizes : (
+            s: 24px,
+            m : 32px,
+            l : 42px,
+            xl : 56px,
+            xxl : 64px
+        );
+
+        @each $size, $val in $sizes {
+
+            &_#{$size} {
+                height: $val;
+            }
+
+        }
+
+    }
+
+}
