@@ -1,0 +1,37 @@
+.icon-plus {
+
+    &__icon {
+
+        &_intend-l {
+
+            &_l {
+                margin-left: var(--space_l);
+            }
+
+        }
+
+        &_indent-r {
+
+            @each $size in s, m {
+
+                &_#{$size} {
+                    margin-right: var(--space_#{$size});
+                }
+
+            }
+
+        }
+
+    }
+
+    &__block {
+        
+    }
+
+    &_vertical-align {
+
+        &_center{
+            
+        }
+    }
+}
