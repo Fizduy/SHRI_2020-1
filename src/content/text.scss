@@ -1,0 +1,81 @@
+.text {
+
+    &__word {
+
+        height: var(--height);
+        
+        &_width {
+
+            @each $size in s, m, l {
+                
+                &_#{$size} {
+                    width: var(--width-#{$size});
+                }
+                
+            }
+
+        }
+    }
+
+    &_align {
+
+        &_center {
+            //TODO: Выравнивание псевдотекста по центру
+        }
+    }
+
+    &_size {
+
+        $text-size: (
+            s:   ( s: 20px, m: 48px, l: 100px ),
+            m:   ( s: 24px, m: 56px, l: 114px ),
+            l:   ( s: 28px, m: 68px, l: 138px ),
+            xl:  ( s: 32px, m: 74px, l: 154px ),
+            xxl: ( s: 36px, m: 88px, l: 184px )
+        );
+
+        @each $size, $widths in $text-size {
+                
+            &_#{$size} {
+
+                --height: var(--text-#{$size});
+
+                @each $w-key, $w-size in $widths {
+                    --width-#{$w-key}: #{$w-size};
+                }
+            }
+            
+        }
+    }
+
+    &_type {
+
+        &_h1 {
+            margin: 18px 0 24px;
+        }
+
+        &_h2 {
+            margin: 45px 0 21px;
+        }
+
+        &_h3 {
+            margin: 42px 0 0;
+        }
+
+        &_p {
+            margin: 15px 0 21px;
+        }
+
+    }
+
+    &_view {
+
+        @each $color in primary, secondary, ghost, link {
+                
+            &_#{$color} {
+                background-color : var(--text-#{$color});
+            }
+            
+        }
+    }
+}
