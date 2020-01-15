@@ -1,0 +1,93 @@
+.form {
+
+    &__item {
+
+        &_border {
+
+            &_bottom {
+                border-bottom: none;
+            }
+        }
+
+        &_distribute {
+
+            &_between {
+                justify-self: unset;
+            }
+        }
+
+        &_vertical-align {
+
+            &_center{
+                align-self: center;
+            }
+        }
+
+        &_space-v {
+
+            @each $space-v in xxxs, xxs, s, m, l, xl, xxl, xxxl, xxxxl {
+
+                &_#{$space-v} {
+                    padding-top: var(--space_#{$space-v});
+                    padding-bottom: var(--space_#{$space-v});
+                }
+
+            }
+
+        }
+
+        &_space-h {
+
+            @each $space-h in xxxs, xxs, s, m, l, xl, xxl, xxxl, xxxxl {
+
+                &_#{$space-h} {
+                    padding-left: var(--space_#{$space-h});
+                    padding-right: var(--space_#{$space-h});
+                }
+
+            }
+
+        }
+
+        &_indent-b {
+
+            @each $indent-b in xxxs, xxs, s, m, l, xl, xxl, xxxl, xxxxl {
+
+                &_#{$indent-b} {
+                    margin-bottom: var(--space_#{$indent-b});
+                }
+
+            }
+
+        }
+    }
+
+    &__label {
+
+        &_width {
+
+            &_default {
+                width: 35%;
+            }
+        }
+    }
+
+    &__control {
+        //TODO понять смысл инструкций
+    }
+
+    &_border {
+        
+        &_all {
+            border: 3px solid var(--bg-border);
+        }
+    }
+
+    &_view {
+
+        &_default {
+            background-color: var(--bg-default);
+        }
+    }
+
+}

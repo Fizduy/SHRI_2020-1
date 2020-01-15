@@ -1,0 +1,80 @@
+.informer {
+
+    &__content {
+
+        &_distribute {
+
+            &_default {
+
+            }
+
+            &_between {
+
+            }
+
+            &_center {
+                justify-self: center;
+            }
+
+        }
+
+        &_space-a{
+
+            @each $size in xl, xxl {
+                
+                &_#{$size} {
+                    padding: var(--space_#{$size});
+                }
+                
+            }
+
+        }
+
+    }
+
+    &__action {
+
+        &_distribute {
+
+            &_default {
+
+            }
+
+            &_between {
+
+            }
+
+            &_center {
+                justify-self: center;
+            }
+
+        }
+
+        &_space-a{
+
+            @each $size in xl, xxl {
+                
+                &_#{$size} {
+                    padding: var(--space_#{$size});
+                }
+                
+            }
+
+        }
+        
+    }
+
+    &_border {
+        
+        &_all {
+            border: 3px solid var(--bg-border);
+        }
+    }
+
+    &_view {
+
+        &_default {
+            background-color: var(--bg-default);
+        }
+    }
+}
