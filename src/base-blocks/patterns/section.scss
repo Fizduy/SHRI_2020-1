@@ -1,5 +1,7 @@
 .section {
 
+    background-color: var(--bg-default);
+
     &_space-v {
 
         @each $space-v in xxl, xxxxl {
