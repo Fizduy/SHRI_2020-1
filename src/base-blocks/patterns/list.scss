@@ -8,11 +8,19 @@
         &_border {
 
             &_top {
-                border-top: none;
+                border-top: 3px solid var(--bg-border);
+
+                &:first-child{
+                    border-top: none;
+                }
             }
 
             &_bottom {
-                border-bottom: none;
+                border-bottom: 3px solid var(--bg-border);
+
+                &:last-child{
+                    border-bottom: none;
+                }
             }
         }
 

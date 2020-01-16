@@ -1,7 +1,7 @@
 .onoffswitch {
     width: 97px;
     height: 32px;
-    border-width: 2px;
+    border: 2px solid var(--bg-border);
 
     &__button {
         width: 24px;

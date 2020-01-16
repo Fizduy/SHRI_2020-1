@@ -44,6 +44,8 @@
                 @each $w-key, $w-size in $widths {
                     --width-#{$w-key}: #{$w-size};
                 }
+
+                line-height: var(--line-height-#{$size});
             }
             
         }

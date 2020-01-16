@@ -9,6 +9,10 @@
 
             &_bottom {
                 border-bottom: solid;
+
+                &:last-child{
+                    border-bottom: none;
+                }
             }
         }
 
