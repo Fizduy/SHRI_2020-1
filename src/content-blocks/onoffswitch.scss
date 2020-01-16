@@ -1,0 +1,11 @@
+.onoffswitch {
+    width: 97px;
+    height: 32px;
+    border-width: 2px;
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        background-color: var(--bg-border);
+    }
+}

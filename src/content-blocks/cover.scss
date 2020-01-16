@@ -1,0 +1,17 @@
+.cover {
+    min-height: 472px;
+
+    &__preview {
+        margin-right: var(--space_l);
+        margin-bottom: var(--space_l);
+    }
+
+    & .image {
+        height: 180px;
+    }
+
+    & .button {
+        //TODO: высота кнопки — l
+        height: 42px;
+    }
+}

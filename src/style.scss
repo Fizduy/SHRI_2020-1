@@ -10,10 +10,12 @@
 @import 'patterns/icon-plus';
 @import 'patterns/section';
 
-@import 'content/text';
-@import 'content/avatar';
-@import 'content/brand-logo';
-@import 'content/placeholder';
-@import 'content/button';
-@import 'content/input';
-@import 'content/image';
+@import 'content-blocks/payment';
+@import 'content-blocks/warning';
+@import 'content-blocks/product';
+@import 'content-blocks/history';
+@import 'content-blocks/cover';
+@import 'content-blocks/event';
+@import 'content-blocks/header';
+@import 'content-blocks/onoffswitch';
+@import 'content-blocks/footer';

@@ -1,0 +1,14 @@
+.header {
+    margin: var(--space_xxxl) var(--gap);
+
+    &__logo {
+        width: 179px;
+        height: 34px;
+        background-color: var(--text-primary);
+    }
+
+    &__content {
+        max-width: 1280px;
+    }
+
+}

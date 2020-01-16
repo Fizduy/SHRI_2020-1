@@ -1,0 +1,7 @@
+.warning {
+    min-height: 335px;
+
+    & .placeholder {
+        margin-top: var(--space_m);
+    }
+}
