@@ -1,5 +1,7 @@
 .icon-plus {
 
+    display: flex;
+
     &__icon {
 
         &_intend-l {
@@ -31,7 +33,7 @@
     &_vertical-align {
 
         &_center{
-            
+            align-items: center;
         }
     }
 }

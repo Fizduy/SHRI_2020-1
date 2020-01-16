@@ -2,10 +2,13 @@
 
     &__content {
 
+        display: flex;
+        flex-wrap: wrap;
+
         &_distribute {
 
             &_center{
-                justify-self: center;
+                justify-content: center;
             }
 
         }
@@ -13,7 +16,7 @@
         &_vertical-align {
 
             &_center{
-                align-self: center;
+                align-content: center;
             }
 
         }
@@ -34,18 +37,21 @@
 
     &__footer {
 
+        display: flex;
+        flex-wrap: wrap;
+
         &_distribute {
 
             &_between{
-                justify-self: unset;
+                justify-content: space-between;
             }
 
             &_center{
-                justify-self: center;
+                justify-content: center;
             }
 
             &_right{
-                justify-self: right;
+                justify-content: flex-end;
             }
 
         }
@@ -53,15 +59,15 @@
         &_vertical-align {
 
             &_center{
-                align-self: center;
+                align-items: center;
             }
 
             &_top{
-                align-self: start;
+                align-items: start;
             }
 
             &_bottom{
-                align-self: end;
+                align-items: end;
             }
 
         }

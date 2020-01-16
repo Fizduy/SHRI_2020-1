@@ -1,0 +1,10 @@
+@mixin space-v($sizes-map) {
+
+    @each $size in $sizes-map {
+      &_#{size} {
+        padding-top: var(--space_#{$space-v});
+        padding-bottom: var(--space_#{$space-v});
+      }
+    }
+
+  }

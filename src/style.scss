@@ -1,14 +1,22 @@
-@import 'themes/theme';
+@import 'base-blocks/themes/theme';
 
-@import 'frames/layout';
-@import 'frames/grid';
+@import 'base-blocks/frames/layout';
+@import 'base-blocks/frames/grid';
 
-@import 'patterns/card';
-@import 'patterns/form';
-@import 'patterns/informer';
-@import 'patterns/list';
-@import 'patterns/icon-plus';
-@import 'patterns/section';
+@import 'base-blocks/patterns/card';
+@import 'base-blocks/patterns/form';
+@import 'base-blocks/patterns/informer';
+@import 'base-blocks/patterns/list';
+@import 'base-blocks/patterns/icon-plus';
+@import 'base-blocks/patterns/section';
+
+@import 'base-blocks/content/text';
+@import 'base-blocks/content/avatar';
+@import 'base-blocks/content/brand-logo';
+@import 'base-blocks/content/placeholder';
+@import 'base-blocks/content/button';
+@import 'base-blocks/content/input';
+@import 'base-blocks/content/image';
 
 @import 'content-blocks/payment';
 @import 'content-blocks/warning';

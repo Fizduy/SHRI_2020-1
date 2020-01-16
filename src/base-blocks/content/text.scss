@@ -1,7 +1,8 @@
 .text {
 
     &__word {
-
+        
+        display: inline-block;
         height: var(--height);
         
         &_width {
@@ -20,7 +21,7 @@
     &_align {
 
         &_center {
-            //TODO: Выравнивание псевдотекста по центру
+            text-align: center;
         }
     }
 
@@ -72,7 +73,7 @@
 
         @each $color in primary, secondary, ghost, link {
                 
-            &_#{$color} {
+            &_#{$color} .text__word {
                 background-color : var(--text-#{$color});
             }
             

@@ -2,24 +2,27 @@
 
     &__item {
 
+        display: flex;
+        flex-wrap: wrap;
+
         &_border {
 
             &_bottom {
-                border-bottom: none;
+                border-bottom: solid;
             }
         }
 
         &_distribute {
 
             &_between {
-                justify-self: unset;
+                justify-content: space-between;
             }
         }
 
         &_vertical-align {
 
             &_center{
-                align-self: center;
+                align-items: center;
             }
         }
 

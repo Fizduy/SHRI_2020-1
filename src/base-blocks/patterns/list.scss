@@ -2,6 +2,9 @@
 
     &__item {
 
+        display: flex;
+        flex-wrap: wrap;
+
         &_border {
 
             &_top {
@@ -16,14 +19,14 @@
         &_distribute {
 
             &_between {
-                justify-self: unset;
+                justify-content: space-between;;
             }
         }
 
         &_vertical-align {
 
             &_center{
-                align-self: center;
+                align-items: center;
             }
         }
 
