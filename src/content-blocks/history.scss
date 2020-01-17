@@ -1,3 +1,20 @@
 .history {
     border-width: 3px;
+
+    &__show {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+    }
+
+    &__time {
+        margin-right: var(--space_l);
+    }
+    
+
 }

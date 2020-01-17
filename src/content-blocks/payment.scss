@@ -1,3 +1,8 @@
 .payment {
     border-width: 3px;
+
+    &__content {
+        display: block;
+    }
+    
 }
