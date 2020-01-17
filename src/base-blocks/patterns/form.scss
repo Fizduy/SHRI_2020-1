@@ -62,6 +62,11 @@
 
                 &_#{$indent-b} {
                     margin-bottom: var(--space_#{$indent-b});
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+
                 }
 
             }
