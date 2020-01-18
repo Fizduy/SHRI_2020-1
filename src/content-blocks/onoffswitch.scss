@@ -1,12 +1,17 @@
 .onoffswitch {
     width: 97px;
     height: 32px;
-    border: 2px solid var(--bg-border);
+    border: var(--space_xxxxs) solid var(--bg-border);
+    display: flex;
 
     &__button {
         width: 24px;
-        height: 24px;
+        height: 24px; 
         background-color: var(--bg-border);
-        margin: 2px;
+        margin: var(--space_xxxxs);
+    }
+
+    &_checked {
+        justify-content: flex-end;
     }
 }
