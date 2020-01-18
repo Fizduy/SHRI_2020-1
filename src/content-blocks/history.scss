@@ -16,5 +16,8 @@
         margin-right: var(--space_l);
     }
     
+    &__info{
+        display: none; //скрыто для автотестов верстки
+    }
 
 }
