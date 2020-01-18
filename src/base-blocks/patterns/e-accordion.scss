@@ -2,11 +2,20 @@
 
     &__more {
 
-        &_view{
+        overflow: hidden;
 
-            &_default {
+        &_state{
 
-                
+            &_open {
+
+                height: 100%;
+
+            }
+
+            &_close {
+
+                height: 0px;
+
             }
 
         }

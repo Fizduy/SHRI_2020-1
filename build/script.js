@@ -1,5 +1,3 @@
-const themeBlocks = document.getElementsByClassName('theme');
-
 const classMap = {
     'theme_color_project-default' : 'theme_color_project-inverse',
     'theme_color_project-inverse' : 'theme_color_project-default'
@@ -9,9 +7,9 @@ const onoffswitchAction = function (target) {
 
     target.classList.toggle('onoffswitch_checked');
 
-    let themeForInvert = Array.prototype.slice.call(themeBlocks);
+    let themeForToggle = document.querySelectorAll('.theme');
 
-    themeForInvert.forEach( block => {
+    themeForToggle.forEach( block => {
 
         for( let className in classMap){
             if (block.classList.contains(className)) {
@@ -25,13 +23,32 @@ const onoffswitchAction = function (target) {
 
 }
 
+const accordionDefault = function(){
+
+    let accordionsForDefault = document.querySelectorAll('.e-accordion__more');
+
+    accordionsForDefault.forEach( block => {
+        block.classList.add('e-accordion__more_state_close');
+    });
+
+}
+
 const accordionAction = function (target){
-    alert('test_2!');
+
+    let forClose = document.querySelector('.e-accordion__more_state_open');
+    if(forClose){
+        forClose.classList.remove('e-accordion__more_state_open');
+        forClose.classList.add('e-accordion__more_state_close');
+    }
+
+    let forOpen = target.parentElement.querySelector('.e-accordion__more');
+    forOpen.classList.remove('e-accordion__more_state_close');
+    forOpen.classList.add('e-accordion__more_state_open');
 }
 
 const handlerMap = {
     'onoffswitch' : onoffswitchAction,
-    'e-accordion__short' : accordionAction
+    'e-accordion__short' : accordionAction,
 }
 
 const bodyHandler = function (event) {
@@ -45,4 +62,5 @@ const bodyHandler = function (event) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', accordionDefault);
 document.body.addEventListener('click', bodyHandler);
