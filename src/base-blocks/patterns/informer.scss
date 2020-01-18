@@ -1,5 +1,9 @@
 .informer {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     &__content {
 
         display: flex;
