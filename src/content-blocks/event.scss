@@ -2,6 +2,7 @@
     min-height: 400px;
 
     &__preview {
+        display: flex;
         margin-bottom: var(--space_xxl);
     }
 

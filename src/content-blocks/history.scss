@@ -11,10 +11,6 @@
         display: flex;
         align-items: center;
     }
-
-    &__time {
-        margin-right: var(--space_l);
-    }
     
     &__info{
         display: none; //скрыто для автотестов верстки
