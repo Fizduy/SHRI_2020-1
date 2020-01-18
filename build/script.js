@@ -1,5 +1,10 @@
-document.addEventListener('DOMContentLoaded', accordionDefault);
-document.body.addEventListener('click', bodyHandler);
+document.addEventListener('DOMContentLoaded', () => {
+
+    accordionDefault();
+
+    document.body.addEventListener('click', bodyHandler);
+
+});
 
 const handlerMap = {
     'onoffswitch' : onoffswitchAction,
