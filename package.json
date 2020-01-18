@@ -1,17 +1,14 @@
 {
   "name": "shri_2020_1",
   "version": "1.0.0",
-  "description": "test",
+  "description": "задание по верстке для ШРИ Яндекса",
   "main": "index.js",
   "scripts": {
-    "test": "start",
-    "sass": "node-sass --output-style compressed --watch src/style.scss ../stub/build/style.css"
+    "sass": "node-sass --output-style compressed --watch src/style.scss build/style.css"
   },
   "author": "Igor Korneev",
   "license": "ISC",
-  "devDependencies": {
-    "cssnano": "^4.1.10"
-  },
+
   "dependencies": {
     "node-sass": "^4.13.0"
   }
