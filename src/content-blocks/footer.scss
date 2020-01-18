@@ -1,8 +1,6 @@
 .footer {
-    margin-top: var(--space_xxxl);
-    margin-bottom: var(--space_xxxl);
-    margin-left: var(--gap);
-    margin-right: var(--gap);
+
+    padding: var(--space_xxxl) var(--gap);
 
     &__content {
         max-width: 1280px;
