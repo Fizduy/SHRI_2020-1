@@ -10,7 +10,7 @@
         &_border {
 
             &_bottom {
-                border-bottom: solid;
+                border-bottom: var(--space_xxxs) solid var(--bg-border);
 
                 &:last-child{
                     border-bottom: none;
@@ -94,7 +94,7 @@
     &_border {
         
         &_all {
-            border: 3px solid var(--bg-border);
+            border: var(--space_xxxs) solid var(--bg-border);
         }
     }
 
