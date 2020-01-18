@@ -74,7 +74,7 @@
     &_view {
 
         @each $color in primary, secondary, ghost, link {
-                
+            //TODO реализовать через переменную    
             &_#{$color} .text__word {
                 background-color : var(--text-#{$color});
             }
