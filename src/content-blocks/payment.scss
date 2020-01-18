@@ -2,7 +2,8 @@
     border-width: 3px;
 
     &__content {
-        display: block;
+        flex-grow: 1 !important; //TODO другие варианты растягивания input
+        flex-basis: 100%;
     }
     
 }

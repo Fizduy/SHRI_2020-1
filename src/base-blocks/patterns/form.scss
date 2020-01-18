@@ -4,6 +4,8 @@
 
         display: flex;
         flex-wrap: wrap;
+        flex-grow: inherit;
+        flex-basis: inherit;
 
         &_border {
 
@@ -79,13 +81,14 @@
         &_width {
 
             &_default {
-                width: 35%;
+                flex-basis: 35%;
+
             }
         }
     }
 
     &__control {
-        //TODO понять смысл инструкций
+        flex-grow: inherit;
     }
 
     &_border {
