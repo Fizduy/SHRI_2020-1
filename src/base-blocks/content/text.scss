@@ -4,6 +4,7 @@
         
         display: inline-block;
         height: var(--height);
+        background-color: var(--word_color);
         
         &_width {
 
@@ -53,20 +54,19 @@
 
     &_type {
 
-        &_h1 {
-            margin: 18px 0 24px;
-        }
+        $margin-type: (
+            h1 : '18px 0 24px',
+            h2 : '45px 0 21px',
+            h3 : '2px 0 0',
+            p  : '15px 0 21px'
+        );
 
-        &_h2 {
-            margin: 45px 0 21px;
-        }
-
-        &_h3 {
-            margin: 42px 0 0;
-        }
-
-        &_p {
-            margin: 15px 0 21px;
+        @each $type, $margin in $margin-type {
+                
+            &_#{$type} {
+                margin: $margin;
+            }
+        
         }
 
     }
@@ -74,9 +74,9 @@
     &_view {
 
         @each $color in primary, secondary, ghost, link {
-            //TODO реализовать через переменную    
-            &_#{$color} .text__word {
-                background-color : var(--text-#{$color});
+              
+            &_#{$color} {
+                --word_color : var(--text-#{$color});
             }
             
         }
