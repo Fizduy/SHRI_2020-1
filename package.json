@@ -4,12 +4,13 @@
   "description": "задание по верстке для ШРИ Яндекса",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --output-style compressed --watch src/style.scss build/style.css"
+    "sass": "node-sass --output-style compressed --watch src/style.scss build/style.css",
+    "uglify": "uglifyjs src/*.js -m -c -o build/script.js"
   },
   "author": "Igor Korneev",
   "license": "ISC",
-
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "uglify-js": "github:mishoo/UglifyJS2#harmony"
   }
 }
