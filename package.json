@@ -10,7 +10,7 @@
   "author": "Igor Korneev",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "uglify-js": "github:mishoo/UglifyJS2#harmony"
   }
 }
